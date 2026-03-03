@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Plantilla — Escuela Montessori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fuente similar (puedes cambiarla) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/prisma.css" />
+</head>
+
+<body>
+  <!-- Topbar (opcional) -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__hint">Prisma School</span>
+      <a class="topbar__link" href="#contacto">Contactar</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="inicio">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand__mark" aria-hidden="true">P</span>
+        <div class="brand__text">
+          <span class="brand__name">Prisma</span>
+          <span class="brand__sub">School</span>
+        </div>
+      </a>
+
+      <button class="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#sobre">Nosotros</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#admisiones">Admisiones</a>
+        <div class="nav__dropdown">
+          <button class="nav__dropbtn" type="button" aria-haspopup="true" aria-expanded="false">
+            Otros servicios
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="nav__dropmenu" role="menu">
+            <a role="menuitem" href="#camp">Summer Camp</a>
+            <a role="menuitem" href="#calendario">Calendario actividades</a>
+          </div>
+        </div>
+        <a class="nav__cta" href="#visita">Visita a la escuela</a>
+        <a href="#blog">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__card">
+          <p class="eyebrow">Prisma School</p>
+          <h1>Acompañamos el desarrollo de cada niño</h1>
+          <p class="lead">
+            En un entorno preparado, fomentamos autonomía, creatividad y amor por el aprendizaje.
+          </p>
+
+          <div class="btnRow">
+            <a class="btn btn--primary" href="#sobre">Conoce nuestra escuela</a>
+            <a class="btn btn--ghost" href="#sobre">Sobre nosotros</a>
+          </div>
+
+          <div class="hero__note">
+            <span class="pill">0–3 años</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span class="muted">Ambientes preparados · Guías · Comunidad</span>
+          </div>
+        </div>
+
+        <aside class="hero__aside" aria-label="Accesos destacados">
+          <article class="promo" id="camp">
+            <div class="promo__media" aria-hidden="true"></div>
+            <div class="promo__body">
+              <p class="promo__tag">¡Summer Camp!</p>
+              <h3>Un verano lleno de aprendizaje y diversión</h3>
+              <p>Un espacio donde los niños exploran, juegan y aprenden en un entorno respetuoso y natural.</p>
+              <a class="btn btn--small btn--primary" href="#contacto">Más información</a>
+            </div>
+          </article>
+
+          <article class="promo promo--alt" id="admisiones">
+            <div class="promo__media promo__media--alt" aria-hidden="true"></div>
+            <div class="promo__body">
+              <p class="promo__tag">Abierto periodo de admisión</p>
+              <h3>Reserva tu plaza</h3>
+              <p>Te acompañamos en el proceso y resolvemos tus dudas para una adaptación cuidada.</p>
+              <a class="btn btn--small btn--primary" href="#contacto">Más información</a>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT / INTRO -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <h2>Escuela infantil Prisma School</h2>
+          <p>
+            Educación personalizada basada en el desarrollo de los más pequeños, con respeto y motivación.
+          </p>
+        </div>
+
+        <div class="grid3">
+          <article class="feature">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.65-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Educación basada en el desarrollo</h3>
+            <p>Conocemos necesidades evolutivas para responder de manera positiva en cada etapa.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 3-1.34 3-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M2 19c0-2.76 2.24-5 5-5m15 5c0-2.76-2.24-5-5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Comunidad de apoyo vital</h3>
+            <p>Acompañamos a niños y familias con valores humanistas y un entorno de confianza.</p>
+          </article>
+
+          <article class="feature">
+            <div class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 20V8l8-4 8 4v12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Ambientes preparados</h3>
+            <p>Espacios a su altura: orden, estética y materiales accesibles que fomentan autonomía.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPLIT SECTION -->
+    <section class="section section--split" id="equipo">
+      <div class="container split">
+        <div class="split__media" aria-hidden="true"></div>
+
+        <div class="split__content">
+          <p class="eyebrow">¿Qué nos hace diferentes?</p>
+          <h2>Nuestra propuesta pedagógica</h2>
+          <p>
+            Un ambiente donde predomina el orden, la estética, la simpleza y lo real para estructurar mente lógica
+            y orientación espacial desde edades tempranas.
+          </p>
+
+          <div class="bullets">
+            <div class="bullet">
+              <span class="bullet__title">Nido</span>
+              <span class="bullet__text">Hasta 18 meses · cuidados, vínculo y transición hogar–escuela.</span>
+            </div>
+            <div class="bullet">
+              <span class="bullet__title">Comunidad</span>
+              <span class="bullet__text">Hasta 3 años · vida práctica, elección, movimiento libre y exploración.</span>
+            </div>
+          </div>
+
+          <a class="btn btn--primary" href="#visita">Reservar visita</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA VISIT -->
+    <section class="cta" id="visita">
+      <div class="container cta__inner">
+        <div class="cta__text">
+          <p class="eyebrow">¿Quieres conocer nuestra escuela?</p>
+          <h2>Las visitas presenciales marcan la diferencia</h2>
+          <p>
+            Descubre el espacio, conoce al equipo y siente de cerca cómo vivimos el método Montessori.
+          </p>
+        </div>
+        <div class="cta__actions">
+          <a class="btn btn--primary" href="#contacto">Reservar una visita presencial</a>
+          <a class="btn btn--ghost" href="#contacto">Escríbenos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <footer class="footer" id="contacto">
+      <div class="container footer__grid">
+        <div class="footer__col">
+          <div class="brand brand--footer">
+            <span class="brand__mark" aria-hidden="true">P</span>
+            <div class="brand__text">
+              <span class="brand__name">Prisma</span>
+              <span class="brand__sub">School</span>
+            </div>
+          </div>
+          <p class="muted">
+            Somos una escuela adaptada a las necesidades de los más pequeños basada en la metodologia de las inteligencias múltiples, en la cuál, todos somos inteligentes de formas diferentes.
+          </p>
+
+          <div class="social">
+            <a href="#" aria-label="Facebook">Fb</a>
+            <a href="#" aria-label="Instagram">Ig</a>
+            <a href="#" aria-label="YouTube">Yt</a>
+            <a href="#" aria-label="LinkedIn">In</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h3>Contacto</h3>
+          <ul class="contactList">
+            <li>
+              <span class="contactIcon" aria-hidden="true">✉</span>
+              <a href="mailto:hola@tuescuela.es">prismaschool@gmail.es</a>
+            </li>
+            <li>
+              <span class="contactIcon" aria-hidden="true">☎</span>
+              <a href="tel:+34910000000">+34 951 593 987</a>
+            </li>
+            <li>
+              <span class="contactIcon" aria-hidden="true">⌂</span>
+              <span>Calle de monegros 23 Leganés Madrid</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h3>Enlaces</h3>
+          <ul class="links">
+            <li><a href="#sobre">Nosotros</a></li>
+            <li><a href="#admisiones">Admisiones</a></li>
+            <li><a href="#visita">Visita la escuela</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col footer__form">
+          <h3>Escríbenos</h3>
+          <form class="form" onsubmit="event.preventDefault(); alert('Formulario de ejemplo');">
+            <label>
+              <span>Nombre</span>
+              <input type="text" placeholder="Tu nombre" required>
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" placeholder="tucorreo@ejemplo.com" required>
+            </label>
+            <label>
+              <span>Mensaje</span>
+              <textarea rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            </label>
+            <label class="check">
+              <input type="checkbox" required>
+              <span>He leído y acepto la Política de privacidad</span>
+            </label>
+            <button class="btn btn--primary btn--full" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <small>© 2026 — Tu Prisma School. Todos los derechos reservados.</small>
+        <div class="footer__legal">
+          <a href="#">Política de Cookies</a>
+          <span>·</span>
+          <a href="#">Política de privacidad</a>
+          <span>·</span>
+          <a href="#">Aviso legal</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Menú responsive + dropdown
+    const toggle = document.querySelector(".navToggle");
+    const nav = document.querySelector("#nav");
+    const dropBtn = document.querySelector(".nav__dropbtn");
+    const dropMenu = document.querySelector(".nav__dropmenu");
+
+    toggle?.addEventListener("click", () => {
+      const open = nav.classList.toggle("nav--open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+
+    dropBtn?.addEventListener("click", () => {
+      const expanded = dropBtn.getAttribute("aria-expanded") === "true";
+      dropBtn.setAttribute("aria-expanded", expanded ? "false" : "true");
+      dropMenu.classList.toggle("nav__dropmenu--open");
+    });
+
+    // Cierra dropdown al click fuera
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".nav__dropdown")) {
+        dropBtn?.setAttribute("aria-expanded", "false");
+        dropMenu?.classList.remove("nav__dropmenu--open");
+      }
+    });
+  </script>
+</body>
+</html>
